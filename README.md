@@ -1029,3 +1029,22 @@ A-level projects add two further expectations:
 The objective is not to reward the largest application or the most complicated framework.
 
 The objective is to develop students who can design, implement, evaluate, and understand useful AI systems.
+
+
+
+
+## Student Project: Course Deadlines Assistant
+
+An LLM agent (level C) that answers questions about courses, exam dates and deadlines using tools.
+
+### Setup
+1. Python 3.10+ is required.
+2. Create and activate a virtual environment: `python -m venv .venv`, then `.venv\Scripts\Activate.ps1`
+3. Install dependencies: `python -m pip install -r requirements.txt`
+4. Copy `.env.example` to `.env` and set `LLM_API_KEY` and `LLM_MODEL` (gpt-6-luna).
+
+### Run
+`python src/main.py "your question"`
+
+### Status
+Week 11: the application sends a question to the LLM and prints the answer. API errors and missing configuration are reported as clear messages. Tools are planned for Week 13.
